@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="formEntry" method="" action="">
+		    <div class="form-group">
+          <label for="year">Vehicle Years</label>
+          <input type="number" class="form-control" id="year" placeholder="2000" value="">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="age">Primary Driver Age</label>
+          <input type="number" class="form-control" id="age" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="GENDER">Primary Driver Gender</label>
+          <input type="text" class="form-control" id="gender" placeholder="" value="">
+        </div>
+        <button onclick = "return myFunction()" id="Get-quote" type="button">Get Quote Now </button>
+        </form>
+    </form><!--End of form-->
+
+
+  <script>
+   	function myFunction() {
+      var year_input= document.getElementById("year").value;
+      var age_input = document.getElementById("age").value;
+      var gender_input= document.getElementById("gender").value;
+      if (year_input < 1985) {
+        var message = "Denied";
+        document.getElementById("output").textContent = message;
+      }
+      else if (gender_input ="Male" && age_input < 25){
+        var message = "Denied";
+        document.getElementById("output").textContent = message;
+      }
+      else {
+        var message = "Approved";
+        document.getElementById("output").textContent = message;
+       }
+      var inputs= {
+            "inputs":[
+              {"name":"\"DriverDOB_\"","value":14304},
+              {"name":"\"DriverGender_\"","value":"Male"},
+              {"name":"\"Make_\"","value":"Mazda"},
+              {"name":"\"VehicleYear_\"","value":2015}
+            ]
+          };
+      var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", restListener);
+        oReq.open("POST", "http://sasbap.demo.sas.com/SASMicroAnalyticService/rest/modules/a5c39527-0d59-4a29-9897-dd7223a66fe1/steps/execute");
+        oReq.setRequestHeader("Content-Type", "application/json");
+        oReq.send(inputs);
+    }
+    function restListener(){
+      console.log(this.responseText)
+    }
+  </script>
+
+<div id="results"> 
+ <p>Approval Status: <span id="output"></span> 
+ </p>
+</div>
+</html>
+

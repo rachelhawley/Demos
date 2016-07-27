@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAS For Finance</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div id="header_container" class="container">
+        <div class="navbar-header container">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+          <div id="top-items">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-lock"></span><br class="hidden-xs">Login</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Call Center</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-flag"></span><br class="hidden-xs">Locations</a>
+            </li>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group form-group-sm">
+                <input type="text" class="form-control" placeholder="Search">
+               </div>
+            <button type="submit" class="btn btn-default btn-sm">Submit</button>
+            </form>
+            </ul><!-- #nav-list -->
+
+          </div>
+        </div>
+        <section class="container">
+        <div class="row">
+           <div class="col-sm-3 finance-types"> 
+            <div class="text-center" >
+               <a href="#" class="text-uppercase"><span >SAVINGS</span> <br>Plan for the future</a>  
+            </div>  
+          </div>
+          <div class="col-sm-3 finance-types"> 
+          <div class="text-center" >
+             <a href="#" class="text-uppercase"><span >CREDIT CARDS</span> <br>Buy the things you need</a>  
+          </div>  
+          </div>
+          <div class="col-sm-3 finance-types"> 
+          <div class="text-center" >
+             <a href="#" class="text-uppercase"><span >HOME INSURANCE</span> <br>Protect your family and property</a>  
+          </div>  
+          </div>
+          <div class="col-sm-3 finance-types"> 
+          <div class="text-center" >
+             <a href="#" class="text-uppercase"><span >motor insurance</span> <br>Insurance for the road ahead</a>  
+          </div>  
+          </div>
+        </div>
+        </section>
+</nav>
+</header>
+
+<div id="main-content" class="container main-content">
+  <div class="row top-section">
+  <div class="col-md-4">
+  <h2 id="Content-Title" class="text-center"> Get Motor Insurance from a name you trust</h2>
+  <p class="text-center"> SAS for Finance car insurance gives you quality protection at a great price. Every policy comes with the support of a knowledgeable and friendly SAS for Finance agent. With personal attention and service, you'll have the information you need to choose the car insurance coverage that makes the most sense for you.</p>
+  </div>  
+  <div class=" col-md-8" >
+      <img id="main-image" src="images/motorinsurance.jpg" alt="Motor Incident" class="img-responsive">
+    </div>
+    </div>
+
+  <section class="row">
+    <div class="col-md-5 lower-text">
+      <h2 id="Content-Title" class="text-right"> Calculate your Premiums</h2>
+      <p  class="text-right">Our motor premium calculator allows you to calculate how much insurance premiums you’ll be paying when you take up a motor insurance plan. Premiums may vary, depending on plan specifics.</p>
+    </div>  
+  
+    <div class="col-md-7">
+      <form>
+        <div class="form-group ">
+          <label for="app_date">Application Date</label>
+          <input type="date" class="form-control" id="app_date" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="DOB">Date of Birth</label>
+          <input type="date" class="form-control" id="DOB" placeholder="">
+        </div>
+        <div class="form-group">
+         <label for="veh-make"> Vehicle Make</label>
+          <select class="form-control">
+            <option>Select One</option>
+            <option>Ford</option>
+            <option>Honda</option>
+            <option>BMW</option>
+            <option>Mazda</option>
+            <option>Dodge</option>
+          </select>
+        </div>
+        <div class="form-group">
+         <label for="total-insured">Vehicle Sum Insured</label>
+          <select class="form-control">
+            <option>Select One</option>
+            <option>$75,000 - $100,000</option>
+            <option>$101,000 - $150,000</option>
+            <option>$151,000 - $200,000</option>
+            <option>$201,000 - $250,000</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="YEAR">Vehicle Year</label>
+          <input type="text" class="form-control" id="YEAR" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="GENDER">Primary Driver Gender</label>
+          <input type="text" class="form-control" id="GENDER" placeholder="">
+        </div>
+        <button type="submit" class="btn btn btn-primary btn-lg pull-right" id="Get-quote">Get Quote Now <span class="glyphicon glyphicon-play"></span>
+        </button>
+      </form>
+    </div><!--End of form-->
+      </section>
+
+
+  <section class="container">
+    <div class="row">
+    <div class="empty col-md-5 visible-md visible-lg"></div>
+     
+     <div id="results" class="col-md-7">
+      <h2>Your Online Quote  (show only after click)</h2>
+      <form>
+        <div class="form-group ">
+          <label for="premium">Pure Premium</label>
+          <input type="text" class="form-control" id="premium" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="basic">Basic Premium</label>
+          <input type="text" class="form-control" id="basic" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="underwrite">Underwriting Approval Status</label>
+          <input type="text" class="form-control" id="underwrite" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="reject-code">Reject Reason Code</label>
+          <input type="text" class="form-control" id="reject-code" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="risk">Risk</label>
+          <input type="text" class="form-control" id="Risk" placeholder="">
+        </div>
+        </form>
+    </div><!--End of results-->
+    
+   </div>
+    </section>
+</div><!-- End of #main-content -->
+
+
+<footer class="panel-footer">
+    <div class="container">
+      <div id="footer-content" class="row">
+        <section id="Products" class="col-sm-2">
+          <span>PRODUCTS</span><br>
+          Savings<br>
+          Credit Cards<br>
+          Home Insurance
+          <hr class="visible-xs">
+        </section>
+        <section id="About-us" class="col-sm-2">
+          <span>ABOUT US</span><br>
+          About SAS for Finance<br>
+          Company History<br>
+          Values and Vision<br>
+          About the CEO<br> 
+          Careers
+          <hr class="visible-xs">
+        </section>
+         <section id="about-site" class="col-sm-2">
+          <span>ABOUT THE SITE</span><br>
+          Security Statement <br>
+          Legal Notice<br>
+          Privacy Policy<br>
+          Accessibility<br>
+          Site Map
+        </section>
+        <section id="contact-us" class="col-sm-2">
+          <span>CONTACT US</span><br>
+          Find a Branch <br>
+          Email Customer Service<br>
+          Call Center Information<br>
+          Technical Support<br>
+          Website Feedback
+        </section>
+         <section id="copyright" class="col-sm-4 text-right">
+         <img id="logo-bottom" src="images/sas_whitelogo_horiz.png"  width="180" height="43" alt="Computer Hope"><br>
+         Company Confidential - For Internal Use Only<br>
+         Copyright &copy; SAS Institute, Inc.  All right reserved. <br> <br>
+
+          
+          </section>
+ </footer>
+
+
+
+
+  
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

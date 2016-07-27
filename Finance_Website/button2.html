@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="formEntry" method="" action="">
+		    <button onclick = "myFunction()" id="Get-quote" type="button">Click Me </button>
+     
+</div><!--End of form-->
+  <script>
+   	function myFunction() {
+      var inputs= {
+            "inputs":[
+              {"name":"\"DriverDOB_\"","value":14304},
+              {"name":"\"DriverGender_\"","value":"Male"},
+              {"name":"\"Make_\"","value":"Mazda"},
+              {"name":"\"VehicleYear_\"","value":2015}
+            ]
+          };
+      var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", restListener);
+        oReq.open("POST", "http://sasbap.demo.sas.com/SASMicroAnalyticService/rest/modules/a5c39527-0d59-4a29-9897-dd7223a66fe1/steps/execute");
+        oReq.setRequestHeader("Content-Type", "application/json");
+        oReq.send(inputs);
+    }
+    function restListener(){
+      console.log(this.responseText)
+    }
+  </script>
+  </body>
+</html>
+

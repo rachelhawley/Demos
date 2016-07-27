@@ -1,0 +1,16 @@
+{
+	"inputs":[
+		{"name":"\"DriverDOB_\"","value":11017},
+		{"name":"\"DriverGender_\"","value":"Male"},
+		{"name":"\"Make_\"","value":"Mazda"},
+		{"name":"\"VehicleYear_\"","value":2015}
+	]
+}
+
+"outputs":[{"name":"\"DriverAge\"","type":"decimal","dim":0,"size":0},
+	{"name":"\"DriverDOB\"","type":"decimal","dim":0,"size":0},
+	{"name":"\"DriverGender\"","type":"string","dim":0,"size":0},
+	{"name":"\"Make\"","type":"string","dim":0,"size":0},
+	{"name":"\"Status\"","type":"string","dim":0,"size":0},
+	{"name":"\"VehicleAge\"","type":"decimal","dim":0,"size":0},
+	{"name":"\"VehicleYear\"","type":"decimal","dim":0,"size":0}]

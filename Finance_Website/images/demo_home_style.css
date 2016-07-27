@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+
+
+
+body {
+	background-color:#464646;
+	/**font-family: avenirlight, HelveticaNeue, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font:AvenirNextMedium, "Avenir Next Medium";
+	src:url(../resources/AvenirNextW1G-Medium.otf)**/
+}
+
+@font-face{
+font-family:"avenir-med";
+src:url("//www.sas.com/includes/fonts/an/bb495831-ebf7-4423-9a14-ee11bf6b292f.woff") format("woff");
+}
+
+
+
+h1  {
+font-family: 'avenir-medium', Helvetica, Arial,sans-serif;
+}
+
+h2 {
+	font-family: 'avenir-medium', Helvetica, Arial,sans-serif;
+	margin:0 0 6px 0;
+	font-size:1em;
+	color:#464646;
+	
+}
+
+
+
+#container {
+	width:900px;
+/*	height:1185px; */
+	margin:0 auto;
+	background-color:#FFF;
+	margin-bottom:20px;
+}
+
+#header {
+	height:90px;
+	background-color:#000;
+	color:#FFF;
+	padding:20px 0px 10px 0px;
+}
+
+#saslogo{
+	margin:0 0 4px 20px;
+}
+
+
+#header ul {
+	/*display:inline;*/
+	list-style:none;
+	float:right;
+	margin: 12px 20px 0 0;
+}
+
+#header ul li{
+	float:right;
+	display:inline;
+	margin-left:20px;
+}
+
+
+
+#productnav{
+	height:53;
+	width:900px;
+}
+
+.productnav2{
+	display:inline;
+	float:left;
+	margin:0 0 0 0;
+}
+
+#savingslink{
+	float:left;
+	margin:0 0 0 0;
+}
+
+#creditcardlink{
+	margin:0 0 0 0;
+}
+
+#loanslink{
+	margin:0 0 0 0;
+}
+
+#homeinsurancelink{
+	margin:0 0 0 0;
+}
+
+#investmentslink{
+	margin:0 0 0 0;
+}
+	
+
+#toolslink{
+	float:left;
+	margin:0 0 0 0;
+}
+
+
+
+
+/* this is the most recent working nav
+#savings{
+	margin-left:0;}
+	
+.productnav1{
+	display:inline;
+	float:left;
+	margin-top:15px;
+	margin-left:153px;
+}
+*/
+
+
+/*
+.productnav {
+    background-color: #ABCDEF;
+}
+
+.productnav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.productnav li{
+    display: inline-block;
+    padding: 2px;
+    width: 150px;
+}
+
+*/
+
+
+#welcome{
+	position:absolute;
+	color:#FFF;
+	size:24px;
+	text-shadow:1px 1px 3px #000; /**x value, y value, blur, color**/
+	z-index:40;
+	margin: 20px 0 0 20px;
+}
+
+#firstad {
+	margin:20px 0px 20px 20px;
+	float:left;
+}
+
+.secondaryad {
+	margin:20px 0px 20px 28px;
+	display:inline-block;
+	float:left;
+}
+
+#button {
+	margin:20px 0px 110px 28px;
+}
+
+#footer {
+	margin:0 0 0 20px;
+	padding-bottom:20px;
+}
